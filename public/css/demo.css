@@ -1,0 +1,289 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    /* padding-right: 40px;
+    padding-left: 40px; */
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+pre {
+    margin: 10px;
+}
+
+.navbar-list > li.header {
+    font-weight: 900;
+    font-size: 1.1em;
+}
+.navbar-list > li > a {
+    padding: 6px 8px;
+}
+
+.navbar-list > li > a.active {
+    background: #10100D;
+    color: #9d9d9d;
+}
+
+.navbar-list > li > a.active:hover {
+    color: #FFFFFF;
+}
+
+div.dataTables_wrapper {
+    padding: 10px 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.panel {
+    margin: 0;
+
+}
+div.col-md-12.survey input[type='password'],
+.form-group input.form-control{
+  height: 30px;
+  width: 100%;
+}
+.survey .form-horizontal .control-label{
+  /* width: auto; */
+}
+.form-horizontal textarea{
+  width: 100%;
+  height: 60px;
+}
+.organizationpanel select{
+  width: 100%;
+}
+.organizationpanel .form-group{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.organizationpanel .control-label{
+  width: auto !important;
+  text-align: left !important;
+}
+
+
+
+    div.formtest form{
+  margin: 20px 0;
+    }
+    div.formtest form input, div.formtest button{
+  padding: 6px;
+    font-size: 18px;
+    }
+    div.formtest table{
+        width: 100%;
+        margin-bottom: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    }
+    div.formtest table, div.formtest th, div.formtest td{
+        border: 1px solid #cdcdcd;
+    }
+    div.formtest table th, div.formtest table td{
+        padding: 10px;
+        text-align: left;
+    }
+  div.formtest .add-row, div.formtest .delete-row {
+  font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+  }
+  div.borderportion{
+    width: 98%;
+    float: left;
+    border: 1px solid #cccccc;
+    padding: 1%;
+    margin:1%; 
+  }
+  .col-md-12.survey select{
+    width: 100%;
+  }
+.col-md-12.member select{
+  width: 100%;
+}
+.col-md-12.loan select{
+  width: 100%;
+}
+.col-md-12.jamindar select{
+  width: 100%;
+}
+.form-horizontal .form-group{
+    /*margin: 0;*/
+    padding: 0;
+}
+div.survey table th, div.survey table th a{
+  font-size: 12px;
+}
+div.col-md-12.survey div.surveyview div.col-md-6.col-md-push-4,
+div.col-md-12.surveysearch div.row,
+div.col-md-12.surveysearch div.pull-right {
+    display: none;
+}
+div.col-md-12.survey div.surveyview div.col-md-6.col-md-push-4.back{
+  display: block;
+}
+.col-md-12.survey div.surveyview select,
+.col-md-12.survey div.surveyview input,
+.col-md-12.survey div.surveyview textarea{
+  /*pointer-events: none;*/
+  background: #f2f2f2;
+}
+.page-header{
+  margin: 10px 0 10px;
+  font-size: 16px;
+}
+div.zoneareabran{
+    float: right;
+    display: block;
+    position: relative;
+    width: 15%;
+    border: 1px solid #f2f2f2;
+}
+div.zoneareabran li {
+    color: #ffffff;
+    /*clear: both;*/
+}
+div.footercopy{
+    width: 100%;
+    float: left;
+}
+div.zoneareabran ul li span{
+    font-weight: bold;
+    color: navy;
+}
+div.waitingapproval .form-group input.form-control,
+div.waitingapproval .form-group select.form-control,
+div.waitingapproval .form-group textarea.form-control{
+    pointer-events: none;
+    background: #f2f2f2;
+}
+div.waitingapproval .form-group input.form-control.montobbo,
+div.waitingapproval .form-group textarea.form-control.montobbo{
+  pointer-events: auto;
+  background: transparent;
+}
+div.memberdetails select, div.memberdetails input, div.memberdetails textarea{
+    pointer-events: none;
+    background: #f2f2f2;
+}
+div.memberdetails img {
+    width: 100px;
+    height: 100px;
+}
+div.memberdetails input{
+    width: 100%;
+    height: auto;
+}
+div.memberdetails .nav-tabs>li>a{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+p.savingsschedule{
+    border: 1px solid #cccccc;
+    width: 70%;
+    padding: 2%;
+    margin: auto;
+    text-align: center;
+}
+div.memberdetails h4{
+    text-align: center;
+}
